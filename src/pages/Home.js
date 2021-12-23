@@ -77,11 +77,12 @@ const Home = () => {
                 <div className='sobre__grid'>
                     <div className='sobre__mi'>
                         <p className='sobre__descripcion'>
-                            Profesional responsable, con facultades para el trabajo en equipo, capaz de trabajar bajo 
-                            presión y de tomar decisión importante por sí mismo, previsor, lógico, perseverante y empático. 
-                            Dispuesto a afrontar nuevos desafíos, a aprender y a desarrollarse profesionalmente con 
-                            actitud positiva.
-                            Actualmete me e enfocado en el desarrollo front end con tecnologias al rededor de react pero tambien se back end con NodeJs
+                            Profesional responsable, con facultades para el trabajo en equipo, capaz de trabajar 
+                            bajo presión y de tomar decisión importante por sí mismo, previsor, lógico, 
+                            perseverante y empático. Dispuesto a afrontar nuevos desafíos, a aprender y a 
+                            desarrollarse profesionalmente con actitud positiva. Actualmente me he enfocado en el 
+                            desarrollo Front End con tecnologías al rededor de React pero también se Back End con 
+                            NodeJs
                         </p>
                     </div>
                     <div className='sobre__conocimientos'>
