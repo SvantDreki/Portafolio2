@@ -3,7 +3,7 @@ import React from 'react'
 const Header = ({ cieloRef, lunaRef, marRef, pajarosRef }) => {
 
     return (
-        <header className='header'>
+        <header className='header' id='hero'>
             
             <img src='./img/cielo.png' alt='imagen cielo' className='header__cielo' ref={cieloRef} />
             <img src='./img/luna.png' alt='imagen luna' className='header__luna' ref={lunaRef}/>

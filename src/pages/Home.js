@@ -64,7 +64,6 @@ const Home = () => {
             transition={{ delay: 1 }}
         >
             <Header 
-                id="hero"
                 cieloRef={ cieloRef }
                 lunaRef={ lunaRef }
                 marRef={ marRef }
@@ -80,13 +79,21 @@ const Home = () => {
                             Profesional responsable, con facultades para el trabajo en equipo, capaz de trabajar 
                             bajo presión y de tomar decisión importante por sí mismo, previsor, lógico, 
                             perseverante y empático. Dispuesto a afrontar nuevos desafíos, a aprender y a 
-                            desarrollarse profesionalmente con actitud positiva. Actualmente me he enfocado en el 
-                            desarrollo Front End con tecnologías al rededor de React pero también se Back End con 
+                            desarrollarse profesionalmente con actitud positiva. Actualmente, estoy enfocado en el 
+                            desarrollo Front End con tecnologías alrededor de React pero también se Back End con 
                             NodeJs
                         </p>
                     </div>
                     <div className='sobre__conocimientos'>
                         <h3>Conocimientos</h3>
+                        <div className='sobre__skills'>
+                            <p className='sobre__titulo-skills'>
+                                Lenguajes:
+                            </p>
+                            <p className='sobre__list'>
+                                Un poco de Java y C#
+                            </p>
+                        </div>
                         <div className='sobre__skills'>
                             <p className='sobre__titulo-skills'>
                                 Front End:
@@ -111,14 +118,7 @@ const Home = () => {
                                 MongoDB, SQLServer, MySQL, Postgres
                             </p>
                         </div>
-                        <div className='sobre__skills'>
-                            <p className='sobre__titulo-skills'>
-                                Lenguajes:
-                            </p>
-                            <p className='sobre__list'>
-                                Un poco de Java y C#
-                            </p>
-                        </div>
+                        
                         <p className='sobre__actual'>
                             Actualmente aprendiendo React-Native
                         </p>

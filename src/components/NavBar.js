@@ -43,7 +43,18 @@ const NavBar = () => {
                 </div>
                 <div className={ toggle ? 'navBar__list toggle' : 'navBar__list' }> 
                     <nav className='navegacion'>
-                        <Link to={ pathname === '/aprendizaje' ? '/' : '#hero' } className='navegacion__link'>Inicio</Link>
+                        { pathname === '/aprendizaje' ? (
+                            <Link
+                                to={'/'}
+                                className='navegacion__link'
+                            >
+                                Inicio
+                            </Link>
+                        ) : (
+                            <a href='#hero' className='navegacion__link'>
+                                Inicio
+                            </a>
+                        ) }
                         <a href='#sobre' className='navegacion__link'>Sobre Mi</a>
                         <a href='#proyectos' className='navegacion__link'>Proyectos</a>
                         <Link to='/aprendizaje' className='navegacion__link'>Aprendizaje</Link>
