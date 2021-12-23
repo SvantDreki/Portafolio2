@@ -9,7 +9,7 @@ const CardCss = ( { data } ) => {
             <div className='css__imagen'>
                 <img src={ imgUri }  alt='imagen css' loading='lazy' />
             </div>
-            <a href={url} target={'_blank'} className='css__btn'>
+            <a href={url} target={'_blank'} rel="noopener noreferrer" className='css__btn'>
                 {nombre}
             </a>
         </div>

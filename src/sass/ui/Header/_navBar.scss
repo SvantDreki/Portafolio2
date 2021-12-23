@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 10000;
     position: fixed;
-    transition-property: background, backdrop-filter;
+    transition: background, backdrop-filter;
     transition-duration: .2s, .2s;  
     
     &__contenido {

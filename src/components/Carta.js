@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer'
 
 const Carta = ({ proyecto }) => {
 
-    const { ref, inView, entry } = useInView({
+    const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0.4,
       });
@@ -15,7 +15,7 @@ const Carta = ({ proyecto }) => {
             <div className={ inView  ? 'card animated' : 'card' } ref={ref}>
                 <div className='card__grid'>
                     <div className={ inView ? 'card__imagen animated__img' : 'card__imagen' }>
-                        <img src={imgUri} className={ inView ? 'animated__img' : '' } loading='lazy'/>
+                        <img src={imgUri} className={ inView ? 'animated__img' : '' } loading='lazy'alt='imagen proyecto' />
                     </div>
                     <div className='card__body' >
                         <h3 className={ inView ? 'card__header animated__texto1' : 'card__header' } >{ titulo }</h3>
@@ -25,7 +25,7 @@ const Carta = ({ proyecto }) => {
                         
                     </div>
                     <div className='card__btn'>
-                        <a href={url} className={ inView ? 'card__link animated__btn' : 'card__link' } target={'_blank'}>Ver</a>
+                        <a href={url} className={ inView ? 'card__link animated__btn' : 'card__link' } target={'_blank'} rel="noopener noreferrer">Ver</a>
                     </div>
                     <div className='card__tools'>
                         <p className={ inView ? 'card__tool1 animated__tool1' : 'card__tool1' }>
