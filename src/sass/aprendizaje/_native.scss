@@ -1,0 +1,75 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.react {
+
+    margin-bottom: 5rem;
+
+    &__grid {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        @include m.tablet {
+            margin: 0 auto;
+            
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            width: 80%;
+        }
+    }
+
+    &__imagen {
+
+        display: none;
+
+       @include m.tablet {
+            display: block;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 2rem;
+            width: 35%;
+            box-shadow: 0px 3px 18px 3px rgba(0,0,0, 0.2);
+            margin-left: 20rem;
+            transition: transform .3s ease;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+
+            &:hover {
+                transform: scale(1.3);
+            }
+       }
+    }
+
+    &__descripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__texto {
+        margin-bottom: 4rem;
+    }
+
+    &__btn {
+        border: 3px solid crimson;
+        border-radius: 2rem;
+        font-weight: 700;
+        padding: 1rem 3rem;
+        transition: background-color .3s ease;
+        margin-bottom: 4rem;
+
+        &:hover {
+            background-color: crimson;
+        }
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+
+}

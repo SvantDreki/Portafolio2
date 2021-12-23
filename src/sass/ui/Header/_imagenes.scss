@@ -1,0 +1,39 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.base {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.cielo {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.mar {
+    position: absolute;
+    z-index: 5;
+    top: 37rem;
+    left: 0;
+}
+
+.luna {
+    position: absolute;
+    width: 20rem;
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+
+.pajaros {
+    position: absolute;
+    z-index: 6;
+    width: 20rem;
+    top: 0;
+}

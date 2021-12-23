@@ -1,0 +1,175 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.navBar {
+    width: 100%;
+    z-index: 10000;
+    position: fixed;
+    transition-property: background, backdrop-filter;
+    transition-duration: .2s, .2s;  
+    
+    &__contenido {
+        
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &__brand {
+        font-family: v.$brand;
+        letter-spacing: .5rem;
+        &-red {
+            color: crimson;
+        }
+    }
+
+    &__list {
+
+        background-color: rgba(36, 36, 36);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 100%;
+        transition: left .3s ease;
+        
+        @include m.tablet {
+            display: block;
+            position: initial;
+            flex-direction: row;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+        }
+
+    }
+    
+}
+
+.navActivo {
+    background: rgba(36, 36, 36, .6);
+    backdrop-filter: blur(2rem);
+}
+
+.navegacion {
+
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    @include m.tablet {
+        position: initial;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+       
+        @include m.tablet {
+            font-size: 1.6rem;
+            margin-right: 1rem;
+            margin-bottom: 0;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        &:hover {
+            background-color: v.$blanco;
+            color: v.$negro;
+        }
+
+    }
+
+}
+
+.activo {
+    background-color: v.$blanco;
+    color: v.$negro;
+}
+
+.hamburger {
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    transform: scale(.8);
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 3px solid white;
+        animation: pulso 1s ease infinite;
+    }
+
+    @include m.tablet {
+        display: none;
+    }
+
+    &__bar {
+        height: 0.2rem;
+        width: 2rem;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            background-color: white;
+            transition-property: top, bottom;
+            transition: .3s ease;
+        }
+
+        &::after {
+            top: .8rem;
+        }
+
+        &::before {
+            bottom: .8rem;
+        }
+        
+    }
+}
+
+.toggle {
+    left: 0;
+}
+
+@keyframes pulso {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}

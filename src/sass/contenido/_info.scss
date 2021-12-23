@@ -1,0 +1,87 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.info {
+    background-color: rgb(255, 255, 255);
+    padding: 12rem 0;
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 12rem;
+        background-color: v.$fondo;
+    }
+
+    &::after {
+        top: -3rem;
+        transform: rotate(2deg);
+        left: -2rem;
+    }
+
+    &::before {
+        bottom: -3rem;
+        transform: rotate(-2deg);
+        left: -2rem;
+    }
+
+    &__heading {
+        color: v.$negro;
+        text-align: center;
+        width: auto;
+        margin-bottom: 5rem;
+        &::after {
+            content: '';
+            display: block;
+            width: 10%;
+            bottom: 0;
+            height: .5rem;
+            background-color: crimson;
+            margin: 0 auto;
+        }
+    }
+
+    &__grid {
+        
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__contenido-texto {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__texto {
+        color: v.$negro;
+    }
+
+    &__link {
+        display: inline-block;
+        color: v.$negro;
+        font-weight: 700;
+        border: 3px solid crimson;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        transition: background-color .3s ease ;
+
+        &:hover {
+            background-color: crimson;
+            color: v.$blanco;
+        }
+    }
+}

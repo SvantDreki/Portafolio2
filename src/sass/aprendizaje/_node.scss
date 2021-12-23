@@ -1,0 +1,108 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.node {
+
+    margin-bottom: 10rem;
+
+    &__texto {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    &__grid {
+
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        row-gap: 4rem;
+       
+        @include m.tablet {
+            grid-template-rows: unset;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            
+        }
+    }
+
+}
+
+.flip {
+
+    height: 40rem;
+
+    &__contenido {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease-in-out;
+        transform-style: preserve-3d;
+        position: relative;
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &__cara {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 1.5rem;
+        box-shadow: 0px 3px 18px 3px rgba(0,0,0, 0.2);
+        
+    }
+
+    &__cara--front {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    &__cara--back {
+        background-color: v.$cartas;
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 4rem;
+        text-align: center;
+    }
+
+    &__btn {
+        border-radius: 2rem;
+        border: 3px solid crimson;
+        font-weight: 700;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: crimson;
+        }
+    }
+
+    &__imagen {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    &__nombre {
+        display: inline-block;
+        width: 90%;
+        padding: 1rem 3rem;
+        font-weight: 700;
+        font-size: 2rem;
+        border-radius: 3rem;
+        background-color: v.$fondo;
+        text-align: center;
+        z-index: 2;
+    }
+
+}
