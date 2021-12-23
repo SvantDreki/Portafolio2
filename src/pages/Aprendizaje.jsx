@@ -50,7 +50,7 @@ const Aprendizaje = () => {
                                         <p className='flip__texto'>
                                             Creado con: Nodejs, express, MongoDB y PUG
                                         </p>
-                                        <a href='#' className='flip__btn'>
+                                        <a href='https://github.com/SvantDreki/UpTask' target={'_blank'} className='flip__btn' >
                                             Repositorio GitHub
                                         </a>
                                     </div>
@@ -61,7 +61,7 @@ const Aprendizaje = () => {
                                 <div className='flip__contenido'>
                                     <div className='flip__cara flip__cara--front'>
                                         <div className='flip__imagen'>
-                                            <img src='./img/imgDevJobs.png' alt='imagen node' loading='lazy'/>
+                                            <img src='./img/imgDevJobs.png' target={'_blank'} alt='imagen node' loading='lazy'/>
                                         </div>
                                         <p className='flip__nombre'>
                                             DevJobs
@@ -71,7 +71,7 @@ const Aprendizaje = () => {
                                         <p className='flip__texto'>
                                             Creado con: Nodejs, express, MongoDB y PUG
                                         </p>
-                                        <a href='#' className='flip__btn'>
+                                        <a href='https://github.com/SvantDreki/DevJobsFirst' target={'_blank'} className='flip__btn'>
                                             Repositorio GitHub
                                         </a>
                                     </div>
@@ -92,7 +92,7 @@ const Aprendizaje = () => {
                                         <p className='flip__texto'>
                                             Creado con: Nodejs, express, MongoDB y PUG
                                         </p>
-                                        <a href='#' className='flip__btn'>
+                                        <a href='https://github.com/SvantDreki/MeetiFirst' target={'_blank'} className='flip__btn'>
                                             Repositorio GitHub
                                         </a>
                                     </div>
@@ -141,7 +141,7 @@ const Aprendizaje = () => {
                             <p className='react__texto'>
                                 En esta aplicación puedes ver las películas que están en estreno y las que se van a estrenar en cines, además de poder ver información de las películas, los datos son consumidos de la API TMDB
                             </p>
-                            <a href='#' className='react__btn'>Repositorio GitHub</a>
+                            <a href='https://github.com/SvantDreki/PeliculasApp' target={'_blank'} className='react__btn'>Repositorio GitHub</a>
                         </div>
                         <div className='react__imagen'>
                             <img src='./img/prueba/appPeliculas2.jpg' alt='imagen app' loading='lazy'/>
@@ -151,7 +151,7 @@ const Aprendizaje = () => {
                             <p className='react__texto'>
                                 También he aprendido a crear las funciones básicas de las apps de móviles
                             </p>
-                            <a href='#' className='react__btn'>Repositorio GitHub</a>
+                            <a href='https://github.com/SvantDreki/RNComponents' target={'_blank'} className='react__btn'>Repositorio GitHub</a>
                         </div>
                         <div className='react__imagen'>
                             <img src='./img/prueba/NRComponent.jpg' alt='imagen app' loading='lazy' />
