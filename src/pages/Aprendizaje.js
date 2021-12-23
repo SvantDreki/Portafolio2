@@ -48,7 +48,7 @@ const Aprendizaje = () => {
                                     </div>
                                     <div className='flip__cara flip__cara--back'>
                                         <p className='flip__texto'>
-                                            Creado con: Nodejs, express, MongoDB y PUG
+                                            Creado con: Nodejs, express, MySQL y PUG(template engine)
                                         </p>
                                         <a href='https://github.com/SvantDreki/UpTask' target={'_blank'} rel="noopener noreferrer" className='flip__btn' >
                                             Repositorio GitHub
@@ -69,7 +69,7 @@ const Aprendizaje = () => {
                                     </div>
                                     <div className='flip__cara flip__cara--back'>
                                         <p className='flip__texto'>
-                                            Creado con: Nodejs, express, MongoDB y PUG
+                                            Creado con: Nodejs, express, MongoDB y Handlebars(template engine)
                                         </p>
                                         <a href='https://github.com/SvantDreki/DevJobsFirst' target={'_blank'} rel="noopener noreferrer" className='flip__btn'>
                                             Repositorio GitHub
@@ -90,7 +90,7 @@ const Aprendizaje = () => {
                                     </div>
                                     <div className='flip__cara flip__cara--back'>
                                         <p className='flip__texto'>
-                                            Creado con: Nodejs, express, MongoDB y PUG
+                                            Creado con: Nodejs, express, Postgres y EJS(template engine)
                                         </p>
                                         <a href='https://github.com/SvantDreki/MeetiFirst' target={'_blank'} rel="noopener noreferrer" className='flip__btn'>
                                             Repositorio GitHub
