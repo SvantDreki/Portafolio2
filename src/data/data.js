@@ -31,45 +31,45 @@ const proyectos = [
 
 export const cssData = [
     {
-        id: 'Tienda',
-        imgUri: './img/Tienda.jpg',
-        url: '#',
-        nombre: 'Tienda'
+        id: 'PodcastApp',
+        imgUri: './img/PodcastApp.jpg',
+        url: 'https://pedantic-nightingale-45a872.netlify.app/',
+        nombre: 'PodcastApp'
     },
     {
         id: 'TechPro',
         imgUri: './img/TechPro.jpg',
-        url: '#',
+        url: 'https://hopeful-rosalind-300947.netlify.app/',
         nombre: 'TechPro'
     },
     {
         id: 'Nucleus',
         imgUri: './img/Nucleus.jpg',
-        url: '#',
+        url: 'https://naughty-kilby-909e05.netlify.app/',
         nombre: 'Nucleus'
     },
     {
         id: 'Cafeteria',
         imgUri: './img/Cafeteria.jpg',
-        url: '#',
+        url: 'https://elegant-boyd-24ac22.netlify.app/',
         nombre: 'Cafeteria'
     },
     {
         id: 'Arquitectura',
         imgUri: './img/arquitectura.jpg',
-        url: '#',
+        url: 'https://keen-meninsky-d911f5.netlify.app/',
         nombre: 'Arquitectura'
     },
     {
         id: 'AppComida',
         imgUri: './img/AppComida.jpg',
-        url: '#',
+        url: 'https://vibrant-chandrasekhar-0953cf.netlify.app',
         nombre: 'AppComida'
     },
     {
         id: 'AirBNB',
         imgUri: './img/AirBNB.jpg',
-        url: '#',
+        url: 'https://elegant-volhard-0b09d1.netlify.app/',
         nombre: 'AirBNB'
     },
 ]
