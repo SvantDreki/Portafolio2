@@ -47,11 +47,12 @@
 
     &__imagen {
         
-        width: 100%;
+        width: 90%;
         height: 30rem;
         border-radius: 1rem;
         transform: translateY(-20rem);
         overflow: hidden;
+        margin: 0 auto;
         
         
         @include m.tablet {
