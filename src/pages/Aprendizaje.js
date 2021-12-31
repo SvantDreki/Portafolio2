@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CardCss from '../components/CardCss'
 import { cssData } from '../data/data'
 import { motion } from 'framer-motion'
@@ -15,12 +15,24 @@ const pageTransition = {
 } 
 
 const Aprendizaje = () => {
+
+    useEffect(() => {
+        scrollTop()
+    }, [])
+
+    const scrollTop = () => {
+        window.scrollTo({
+            top: 0
+        })
+    }
+
     return (
         <motion.div 
             className='aprendizaje contenedor'
             exit="out"
             animate="in"
             initial="out"
+            transition={{ delay: 1 }}
             variants={pageTransition}   
         >
             <h1 className='aprendizaje__titulo'>

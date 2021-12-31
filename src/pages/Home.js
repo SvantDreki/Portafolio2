@@ -35,6 +35,16 @@ const Home = () => {
 
     }, [])
 
+    useEffect(() => {
+        scrollTop()
+    }, [])
+
+    const scrollTop = () => {
+        window.scrollTo({
+            top: 0
+        })
+    }
+
     const handleScroll = () => {
         let valor = window.scrollY
         let screen = document.documentElement.clientWidth
