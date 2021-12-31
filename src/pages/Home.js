@@ -91,7 +91,7 @@ const Home = () => {
                                 Lenguajes:
                             </p>
                             <p className='sobre__list'>
-                                Un poco de Java y C#
+                                Java, JavaScript, Python y un poco de C#
                             </p>
                         </div>
                         <div className='sobre__skills'>
@@ -99,7 +99,7 @@ const Home = () => {
                                 Front End:
                             </p>
                             <p className='sobre__list'>
-                                CSS3, HTML5, Sass, Gulp, React Hooks, NextJs, Gatsby, JavaScript
+                                CSS3, HTML5, Sass, Gulp, React Hooks, NextJs, Gatsby, Redux, Graphql
                             </p>
                         </div>
                         <div className='sobre__skills'>
